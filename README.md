@@ -1,2 +1,2 @@
-# alaworkshop.github.io
-ALA Workshop Website - current edition ALA 2025
+# alaworkshop2026.github.io
+ALA Workshop Website - Edition 2026
