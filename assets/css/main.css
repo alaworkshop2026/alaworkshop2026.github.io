@@ -138,6 +138,39 @@ input, select, textarea {
     margin: 0 0 0.7em 0;
     }
 
+    #talks .speaker-card {
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 1em;
+    }
+
+    #talks .speaker-photo {
+        width: 35%;
+        float: left;
+    }
+
+    #talks .speaker-photo img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+
+    #talks .speaker-meta {
+        width: 65%;
+        float: right;
+    }
+
+    #talks .speaker-meta-inner {
+        width: 100%;
+        float: right;
+    }
+
+    #talks .speaker-title,
+    #talks .speaker-abstract,
+    #talks .speaker-bio {
+        clear: both;
+    }
+
 	h1, h2, h3, h4, h5, h6 {
         /* color: #AD4824; */
 		/* color: #57b6ff; */
@@ -1361,6 +1394,27 @@ input, select, textarea {
 				.row > .off-12-small {
 					margin-left: 100%;
 				}
+
+                #talks .speaker-photo,
+                #talks .speaker-meta,
+                #talks .speaker-meta-inner {
+                    float: none;
+                    width: 100%;
+                }
+
+                #talks .speaker-photo {
+                    max-width: 220px;
+                    margin: 0 0 1rem 0;
+                }
+
+                #talks .speaker-title {
+                    margin-top: 0.25rem;
+                }
+
+                #talks .speaker-abstract,
+                #talks .speaker-bio {
+                    clear: both;
+                }
 
 				.row.gtr-0 {
 					margin-top: 0;
