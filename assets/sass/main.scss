@@ -1177,6 +1177,22 @@
 			@include vendor('flex-shrink', '0');
 			padding: 3em;
 
+			.workshop-logo {
+				border: 0;
+				display: block;
+				margin: 0 auto 0.85em auto;
+				max-width: 100%;
+				width: 6em;
+
+				img {
+					display: block;
+					height: auto;
+					max-height: 6em;
+					object-fit: contain;
+					width: 100%;
+				}
+			}
+
 			.avatar {
 				display: block;
 				margin: 0 auto _size(element-margin) auto;
@@ -1660,6 +1676,11 @@
 
 				> header {
 					padding: 2em;
+
+					.workshop-logo {
+						margin-bottom: 0.75em;
+						width: 5.25em;
+					}
 
 					.avatar {
 						margin: 0 auto (_size(element-margin) * 0.75) auto;

@@ -2812,6 +2812,22 @@ i.fa {
 			padding: 3em;
 		}
 
+			#header > header .workshop-logo {
+				border: 0;
+				display: block;
+				margin: 0 auto 0.85em auto;
+				max-width: 100%;
+				width: 6em;
+			}
+
+				#header > header .workshop-logo img {
+					display: block;
+					height: auto;
+					max-height: 6em;
+					object-fit: contain;
+					width: 100%;
+				}
+
 			#header > header .avatar {
 				display: block;
 				margin: 0 auto 2.25em auto;
@@ -3259,6 +3275,11 @@ i.fa {
 				#header > header {
 					padding: 2em;
 				}
+
+					#header > header .workshop-logo {
+						margin-bottom: 0.75em;
+						width: 5.25em;
+					}
 
 					#header > header .avatar {
 						margin: 0 auto 1.6875em auto;
