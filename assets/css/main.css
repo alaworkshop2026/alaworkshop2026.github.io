@@ -171,6 +171,96 @@ input, select, textarea {
         clear: both;
     }
 
+    #awards .award-grid {
+        display: grid;
+        gap: 1.5rem;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        margin-top: 1.5rem;
+    }
+
+    #awards .award-card {
+        background: #ffffff;
+        border: solid 1px #e4e4e4;
+        border-radius: 8px;
+        box-shadow: 0 0.75rem 1.75rem rgba(25, 49, 72, 0.08);
+        overflow: hidden;
+    }
+
+    #awards .award-card-primary {
+        border-top: solid 4px #d6a21e;
+    }
+
+    #awards .award-image {
+        background: #f5f7f9;
+        aspect-ratio: 16 / 9;
+        overflow: hidden;
+    }
+
+    #awards .award-image img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    #awards .award-content {
+        padding: 1.25rem 1.35rem 1.4rem 1.35rem;
+    }
+
+    #awards .award-label {
+        color: #7a5a08;
+        font-size: 0.78em;
+        font-weight: 700;
+        letter-spacing: 0;
+        margin: 0 0 0.65rem 0;
+        text-transform: uppercase;
+    }
+
+    #awards .award-content h4 {
+        color: #0b4f7a;
+        font-size: 1.05em;
+        line-height: 1.35;
+        margin: 0 0 0.75rem 0;
+    }
+
+    #awards .award-content p:last-child {
+        color: #555;
+        font-size: 0.92em;
+        line-height: 1.5;
+        margin: 0;
+    }
+
+    #pc .pc-reviewers {
+        border: solid 1px #e4e4e4;
+        border-radius: 8px;
+        margin-top: 1rem;
+        padding: 1rem 1.25rem;
+    }
+
+    #pc .pc-reviewers summary {
+        color: #0b4f7a;
+        cursor: pointer;
+        font-weight: 700;
+    }
+
+    #pc .pc-reviewer-list {
+        column-gap: 2rem;
+        columns: 2;
+        font-size: 0.92em;
+        line-height: 1.55;
+        margin: 1rem 0 0 0;
+    }
+
+    #pc .pc-reviewer-list li {
+        break-inside: avoid;
+        margin: 0 0 0.35rem 0;
+    }
+
+    #previouseditions,
+    #organization {
+        margin-top: 2.25rem;
+    }
+
 	h1, h2, h3, h4, h5, h6 {
         /* color: #AD4824; */
 		/* color: #57b6ff; */
@@ -1414,6 +1504,14 @@ input, select, textarea {
                 #talks .speaker-abstract,
                 #talks .speaker-bio {
                     clear: both;
+                }
+
+                #awards .award-grid {
+                    grid-template-columns: 1fr;
+                }
+
+                #pc .pc-reviewer-list {
+                    columns: 1;
                 }
 
 				.row.gtr-0 {
@@ -2812,21 +2910,48 @@ i.fa {
 			padding: 3em;
 		}
 
+			#header > header .workshop-brand {
+				-moz-align-items: center;
+				-webkit-align-items: center;
+				-ms-align-items: center;
+				align-items: center;
+				display: -moz-flex;
+				display: -webkit-flex;
+				display: -ms-flex;
+				display: flex;
+				gap: 0.7em;
+				-moz-justify-content: center;
+				-webkit-justify-content: center;
+				-ms-justify-content: center;
+				justify-content: center;
+				margin: 0 auto 1em auto;
+			}
+
 			#header > header .workshop-logo {
 				border: 0;
 				display: block;
-				margin: 0 auto 0.85em auto;
+				-moz-flex-shrink: 0;
+				-webkit-flex-shrink: 0;
+				-ms-flex-shrink: 0;
+				flex-shrink: 0;
+				margin: 0;
 				max-width: 100%;
-				width: 6em;
+				width: 9em;
 			}
 
 				#header > header .workshop-logo img {
 					display: block;
 					height: auto;
-					max-height: 6em;
+					max-height: 9em;
 					object-fit: contain;
 					width: 100%;
 				}
+
+			#header > header .workshop-brand h1 {
+				margin: 0;
+				text-align: left;
+				white-space: nowrap;
+			}
 
 			#header > header .avatar {
 				display: block;
@@ -3276,10 +3401,18 @@ i.fa {
 					padding: 2em;
 				}
 
-					#header > header .workshop-logo {
-						margin-bottom: 0.75em;
-						width: 5.25em;
+					#header > header .workshop-brand {
+						gap: 0.55em;
+						margin-bottom: 0.85em;
 					}
+
+					#header > header .workshop-logo {
+						width: 5.75em;
+					}
+
+						#header > header .workshop-logo img {
+							max-height: 5.75em;
+						}
 
 					#header > header .avatar {
 						margin: 0 auto 1.6875em auto;
