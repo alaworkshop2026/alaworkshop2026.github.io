@@ -230,6 +230,7 @@ input, select, textarea {
         margin: 0;
     }
 
+    #about .topics-interest,
     #pc .pc-reviewers {
         border: solid 1px #e4e4e4;
         border-radius: 8px;
@@ -237,12 +238,14 @@ input, select, textarea {
         padding: 1rem 1.25rem;
     }
 
+    #about .topics-interest summary,
     #pc .pc-reviewers summary {
         color: #0b4f7a;
         cursor: pointer;
         font-weight: 700;
     }
 
+    #about .topics-interest-list,
     #pc .pc-reviewer-list {
         column-gap: 2rem;
         columns: 2;
@@ -251,6 +254,7 @@ input, select, textarea {
         margin: 1rem 0 0 0;
     }
 
+    #about .topics-interest-list li,
     #pc .pc-reviewer-list li {
         break-inside: avoid;
         margin: 0 0 0.35rem 0;
@@ -1510,6 +1514,7 @@ input, select, textarea {
                     grid-template-columns: 1fr;
                 }
 
+                #about .topics-interest-list,
                 #pc .pc-reviewer-list {
                     columns: 1;
                 }

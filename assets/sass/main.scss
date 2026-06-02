@@ -215,7 +215,9 @@
 		}
 	}
 
+	#about,
 	#pc {
+		.topics-interest,
 		.pc-reviewers {
 			border: solid 1px _palette(border2);
 			border-radius: 8px;
@@ -229,6 +231,7 @@
 			}
 		}
 
+		.topics-interest-list,
 		.pc-reviewer-list {
 			column-gap: 2rem;
 			columns: 2;
@@ -1723,7 +1726,9 @@
 				}
 			}
 
+			#about,
 			#pc {
+				.topics-interest-list,
 				.pc-reviewer-list {
 					columns: 1;
 				}
